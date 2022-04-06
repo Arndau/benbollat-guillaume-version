@@ -1,0 +1,27 @@
+.navbar{
+  // position: -webkit-sticky;
+	// position: sticky;
+ // margin-top: -54px;
+}
+
+.navbar-lewagon {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  justify-content: space-between;
+  background: white;
+}
+
+.navbar-lewagon .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-lewagon .navbar-brand img {
+  width: 40px;
+}
+
+.navbar-back {
+color: black;
+font-size: 26px;
+text-decoration: none;
+}

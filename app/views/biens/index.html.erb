@@ -1,0 +1,27 @@
+<div class="mapcontainer">
+  <div class="mapbox" style="width:100%; height:100% ;"
+    data-controller="mapbox"
+    data-mapbox-markers-value="<%= @markers.to_json %>"
+    data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
+  </div>
+</div>
+
+<div class="cardscontainer">
+  <% @biens.each do |bien| %>
+    <%= link_to bien_path(bien) do %>
+      <div class="card-product">
+      <%# <img src=<%="#{bien.image1}"%>
+          <%= cl_image_tag bien.image1.key%>
+        <div class="card-product-infos1">
+          <h1><%= bien.user.surnom%></h1> <br>
+          <h2><%= bien.ville %></h2> <br>
+        </div>
+        <div class="card-product-infos2">
+          Loyé: <%= bien.loyé%>€/mensuel<br>
+          <%=bien.meublé == true ? "Meublé" : "Non meublé"%><br>
+          <%=bien.disponible == true ? "Pas encore loué" : "Loué"%>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
+</div>

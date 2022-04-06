@@ -1,0 +1,77 @@
+.lepopupquifaitchier{
+  text-decoration: none;
+  background-color: rgba(0,0,0,0.7);
+  top: 5em;
+  z-index: 500;
+  transform: none !important;
+  //bottom: 50px;
+  //right: 1em;
+  //left: 1em;
+  margin-left: 2.5%;
+  margin-top: 15.5em;
+  border-radius: 10px;
+  position: absolute;
+  //margin-top: 50px;
+  width: 100%;
+}
+.lepopupquifaitchier a{
+  text-decoration: none;
+  color: black;
+}
+
+.mapboxgl-popup {
+width: 100%;
+}
+
+.biencontent {
+  display: flex;
+  padding: none;
+}
+
+.infosbien{
+  line-height:1 ;
+}
+
+.infosbien h1 {
+  font-size: 20px;
+}
+
+.infosbien h2{
+  margin-top: -15PX;
+  margin-bottom: 1px;
+  font-size: 18px;
+}
+
+.mapboxgl-popup-content {
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+  padding: none;
+
+}
+
+.mapboxgl-popup
+
+.message-show.info-window {
+  background-size: cover;
+  padding: 1em 0 1.5em;
+  height: 100%;
+}
+
+.mapboxgl-popup-content img{
+  width: 210px;
+}
+.mapboxgl-popup-content-padding{
+  padding: none;
+}
+.mapboxgl-popup-tip {
+  display: none;
+}
+
+.card-product-infos-info_window{
+    position: absolute;
+    background-color: #F5F5F5;
+    border: 1px solid #F5F5F5;
+    border-radius: 10px;
+    padding: 10px;
+}
